@@ -1,6 +1,0 @@
-Category management
-Add new category
-Edit Category
-User Management
-Add new user
-Edit user
