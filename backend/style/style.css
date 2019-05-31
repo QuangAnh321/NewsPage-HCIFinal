@@ -1,0 +1,134 @@
+.mt-25 {
+	margin-top: 25px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.ml-10 {
+ 	margin-left: 10px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.black-text {
+	color: #000;
+}
+
+.font-35 {
+	font-size: 35px;
+}
+
+.font-18 {
+	font-size: 18px;
+}
+
+.active {
+	color: #2b78e4;
+}
+
+.delete-hover:hover {
+	background-color:#FF0000;
+	color: white;
+}
+
+.edit-hover:hover {
+	background-color: #2b78e4;
+	color: white;
+}
+
+.delete-active:active {
+	background-color: #a50404;
+}
+
+.edit-active:active{
+	background-color: #3d528e;
+}
+
+/*HEADER*/
+#logo .fa-laptop-code{
+	font-size: 60px;
+}
+
+#sign-out .fa-user {
+	font-size: 22px;
+}
+
+ul#sign-out li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 4px 7px;
+}
+
+li#icon {
+	background-color: #1f1f1f;
+	border-radius: 50%;
+}
+
+ul#sign-out button {
+	background-color:  #1f1f1f;
+	cursor: pointer;
+	border: none;
+}
+
+ul#sign-out button:hover {
+	box-shadow: 2px 2px 4px 4px  #1f1f1f; 
+}
+
+#nav {
+	background-color: #1f1f1f;
+}
+
+#nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px 80px;
+}
+
+#nav ul li a:hover {
+	text-decoration: none;
+	color:  #2b78e4;
+}
+
+/*FOOTER*/
+.footer {
+	bottom:0; 
+  	background-color: #1f1f1f;
+  	height: 50px;
+  	margin-left: 115px;
+}
+
+.footer h4 {
+	font-size: 16px;
+	text-align: center;
+}
+
+#confirm {
+	height: 50px;
+	width: 300px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 10px;
+}
+

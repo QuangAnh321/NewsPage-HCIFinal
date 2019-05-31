@@ -1,0 +1,17 @@
+.left ul li {
+	list-style-type: none;
+}
+
+.left {
+	border: solid;
+	width: 150px;
+	height: 250px;
+}
+
+.right {
+	margin-left: 200px;
+	padding: 10px 20px;
+}
+ .right table td {
+ 	cursor: pointer;
+ }
