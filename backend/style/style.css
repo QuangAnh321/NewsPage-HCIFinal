@@ -64,6 +64,14 @@
 	background-color: #3d528e;
 }
 
+.disable {
+	color: #D3D3D3;
+}
+
+.cursor {
+	cursor: context-menu;
+}
+
 /*HEADER*/
 #logo .fa-laptop-code{
 	font-size: 60px;
