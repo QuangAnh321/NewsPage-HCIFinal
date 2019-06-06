@@ -1,4 +1,4 @@
 $(document).ready(function() {
-    $('#header').load('frontend/common/header.html');
-    $('#footer').load('frontend/common/footer.html');
+    $('#header').load('/hci-final/frontend/common/header.html');
+    $('#footer').load('/hci-final/frontend/common/footer.html');
 });
