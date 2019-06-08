@@ -1,9 +1,37 @@
-function checkEmail() {
-	var $email = $('form input[name="email'); //change form to id or containment selector
-	var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
-	if ($email.val() == '' || !re.test($email.val()))
-	{
-    	document.getElementById("email").style.border = "1px solid #4CAF50"
-    	return false;
+function validateEmail() {
+    var email = document.forms["add-user"]["email"].value;
+    if (email == "") {
+   	document.getElementById("Email").style.color = "#FF0000"
+  	document.getElementById("Email").innerHTML = "Please Enter Your Email!";
+    return false;
+  }else{
+  	document.getElementById("Email").innerHTML = "";
+  	return true;
+  }
+
+}
+
+function validatePassword() {
+	var password = document.forms["add-user"]["password"].value;
+	if(password == ""){
+  	document.getElementById("Password").style.color = "#FF0000"
+  	document.getElementById("Password").innerHTML = "Please Enter Your Password!";
+  	return false;
+	}else{
+		document.getElementById("Password").innerHTML = "";
+		return true;
+	}	
+}
+
+
+function validateCfPass() {
+	var cf = document.forms["add-user"]["cfpass"].value;
+	if(cf == ""){
+  	document.getElementById("cfPass").style.color = "#FF0000"
+  	document.getElementById("cfPass").innerHTML = "Please Enter Your Password!";
+  	return false;
+  }else{
+  	document.getElementById("cfPass").innerHTML = "";
+  	return true;
 	}
 }

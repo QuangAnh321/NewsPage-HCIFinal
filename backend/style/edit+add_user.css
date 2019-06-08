@@ -46,3 +46,21 @@ input[type=text] {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+#Email {
+  text-align:left;
+  font-weight:bold;
+  margin-left: 381px; 
+}
+
+#Password {
+  text-align:left;
+  font-weight:bold;
+  margin-left: 381px; 
+}
+
+#cfPass {
+  text-align:left;
+  font-weight:bold;
+  margin-left: 381px; 
+}
