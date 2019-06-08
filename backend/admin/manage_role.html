@@ -17,9 +17,145 @@
 	<link rel="stylesheet" type="text/css" href="../style/style.css">
 </head>
 <body>
-
 	<div id="header"></div>
+	<div class="container">
+    <div class="title font-35 mt-30 mb-50 text-center">
+      <i class="far fa-newspaper" ></i>
+      Role Management
+    </div>
+  </div>
+	<div class="container mb-100">  
 
+	  <div id="confirm"></div>
+
+	  <table class="table table-sm font-18">
+	    <thead class="thead-dark">
+	      <tr>
+	        <th>ID</th>
+	        <th>Role Name</th>
+	        <th>Created_at</th>
+	        <th>Updated_at</th>
+	        <th>Action</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td>1</td>
+	        <td>Admin</td>
+	        <td>01/06/2019</td>
+	        <td></td>
+	        <td>
+	          <a href="edit_role.html" class="fas fa-edit text-center edit-hover edit-active"></a>
+	          <button class="button fas fa-trash-alt delete-hover delete-active" data-toggle="modal" data-target="#myModal1"></button>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModal1">
+						    <div class="modal-dialog modal-dialog-centered">
+						    	<div class="modal-content">
+						      
+							        <!-- Modal Header -->
+							        <div class="modal-header">
+							          <h4 class="modal-title">Are you sure?</h4>
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        </div>
+							        
+							        <!-- Modal body -->
+							        <div class="modal-body">
+							          You will not able to recover this Category!
+							        </div>
+							        
+							        <!-- Modal footer -->
+							        <div class="modal-footer" style="text-align: center;">
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal">Yes, delete it!</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
+							        </div>
+						        
+						      	</div>
+						    </div>
+						</div>
+	        </td>
+	      </tr>
+	      <tr>
+	        <td>1</td>
+	        <td>Editor</td>
+	        <td>01/06/2019</td>
+	        <td></td>
+	        <td>
+	          <a href="edit_role.html" class="fas fa-edit text-center edit-hover edit-active"></a>
+	         <button class="button fas fa-trash-alt delete-hover delete-active" data-toggle="modal" data-target="#myModal1"></button>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModal1">
+						    <div class="modal-dialog modal-dialog-centered">
+						    	<div class="modal-content">
+						      
+							        <!-- Modal Header -->
+							        <div class="modal-header">
+							          <h4 class="modal-title">Are you sure?</h4>
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        </div>
+							        
+							        <!-- Modal body -->
+							        <div class="modal-body">
+							          You will not able to recover this Category!
+							        </div>
+							        
+							        <!-- Modal footer -->
+							        <div class="modal-footer" style="text-align: center;">
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal">Yes, delete it!</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
+							        </div>
+						        
+						      	</div>
+						    </div>
+						</div>
+	        </td>
+	      </tr><tr>
+	        <td>1</td>
+	        <td>User</td>
+	        <td>01/06/2019</td>
+	        <td></td>
+	        <td>
+	          <a href="edit_role.html" class="fas fa-edit text-center edit-hover edit-active"></a>
+	          <button class="button fas fa-trash-alt delete-hover delete-active" data-toggle="modal" data-target="#myModal1"></button>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModal1">
+						    <div class="modal-dialog modal-dialog-centered">
+						    	<div class="modal-content">
+						      
+							        <!-- Modal Header -->
+							        <div class="modal-header">
+							          <h4 class="modal-title">Are you sure?</h4>
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        </div>
+							        
+							        <!-- Modal body -->
+							        <div class="modal-body">
+							          You will not able to recover this Category!
+							        </div>
+							        
+							        <!-- Modal footer -->
+							        <div class="modal-footer" style="text-align: center;">
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal">Yes, delete it!</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
+							        </div>
+						        
+						      	</div>
+						    </div>
+						</div>
+	        </td>	    
+	    </tbody>
+	  </table>
+	 
+		<div class="float-right mt-15 font-18">
+		    <a href="add_role.html"><button class="btn btn-success">Add new role</button></a>
+
+		 </div>
+	  <div class="clearfix"></div>
+	
+	</div>
+	
 	<div id="footer"></div>
 
 	<script type="text/javascript" src="../js/include.js"></script>
