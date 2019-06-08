@@ -1,1 +1,0 @@
-use this since git does not allow empty folder
