@@ -4,7 +4,7 @@
 }
 
 .left {
-	border: solid 1px;
+	border-right: solid 1px;
 	width: 250px;
 	height: 250px;
 	padding-top: 10px;
@@ -34,4 +34,10 @@ table .button {
 	color: #000;
 	background-color: #fff;
 	border: none;
+}
+
+#Category {
+	height: 10px;
+	margin-bottom: 10px;
+	font-weight:bold;
 }

@@ -52,14 +52,16 @@
 							        
 							        <!-- Modal body -->
 							        <div class="modal-body">
+							        	<form name="folder">
 							        	<div id="message"></div>
-							          <input type="text" name="folname" id="folname" placeholder="Folder Name..." required="required">
+							          <input type="text" name="folname" id="folname" placeholder="Folder Name...">
+							      </form>
 							        </div>
 							        
 							        <!-- Modal footer -->
 							        <div class="modal-footer" style="text-align: center;">
-										<button type="button" class="btn btn-success" data-dismiss="modal" onclick="addFile();">Confirm</button>
-							          	<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-success" data-dismiss="" onclick="addFolder();">Confirm</button>
+							          	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="close();">Close</button>
 							        </div>
 						      	</div>
 						    </div>
@@ -79,7 +81,10 @@
 							        
 							        <!-- Modal body -->
 							        <div class="modal-body">
+							        	<form name="file">
+							        	<div id="message1"></div>
 							          <input type="File" name="fileToUpload" id="fileToUpload" class="ml-10">
+							      </form>
 							        </div>
 							        <div class="modal-body">
 							        	<p>Choose Folder:</p>
@@ -93,8 +98,8 @@
 							        
 							        <!-- Modal footer -->
 							        <div class="modal-footer" style="text-align: center;">
-										<button type="button" class="btn btn-success" data-dismiss="modal" onclick="addFile();">Confirm</button>
-							          	<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-success" data-dismiss="" onclick="addFile();">Confirm</button>
+							          	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="close();">Close</button>
 							        </div>
 						      	</div>
 						    </div>
