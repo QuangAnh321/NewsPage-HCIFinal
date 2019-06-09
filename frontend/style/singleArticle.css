@@ -1,0 +1,16 @@
+#title {
+    text-align: center;
+}
+
+.date {
+    color: gray;
+}
+
+.featureImage {
+    width: 50%;
+    height: 50%;
+}
+
+.text-center {
+    margin-bottom: 50px;
+}
