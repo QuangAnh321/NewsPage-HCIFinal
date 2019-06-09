@@ -4,7 +4,7 @@
 }
 
 .left {
-	border: solid;
+	border: solid 1px;
 	width: 250px;
 	height: 250px;
 	padding-top: 10px;

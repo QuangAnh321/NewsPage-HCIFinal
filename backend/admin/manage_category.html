@@ -22,7 +22,7 @@
 	<div id="header"></div>
 
 	<div class="container">
-		<div class="title font-35 mt-30 mb-100 text-center">
+		<div class="title font-35 mt-30 mb-50 text-center">
 			<i class="far fa-folder" ></i>
 			 Category Management
 		</div>
@@ -30,44 +30,21 @@
 
 	<section id="left">
 	<div class="container">
-		<div class="left float-left mb-100 text-center font-18">
+		<div class="left float-left mb-100 text-center font-18" style="margin-top: 80px;">
+
 	  	<h2 class="font-35">Add new category:</h2>
 	  	<input type="text">
-	  	<button  class="button1 mt-15" data-toggle="modal" data-target="#submit">
+	  	<button  class="button1 mt-15" onclick="add();">
 			Add
 		</button>
-
-		<!-- The Modal -->
-		<div class="modal fade" id="submit">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-				      
-				    <!-- Modal Header -->
-				    <div class="modal-header">
-				        <h4 class="modal-title">Success!</h4>
-				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				    </div>
-				        
-				    <!-- Modal body -->
-				    <div class="modal-body">
-				        <b>New category added!</b>
-				    </div>
-				        
-				    <!-- Modal footer -->
-				    <div class="modal-footer" style="text-align: center;">
-				        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-				    </div>
-				        
-				</div>
-			</div>
-		</div>
 		</div>
 	</div>
 	</section>
 
 	<section id="right">
 	<div class="container">
-		<div class="mb-100 right">         
+		<div class="right" style="margin-bottom: 50px;"> 
+		<div id="confirm"></div>        
   		<table class="table table-sm font-18">
 		    <thead class="thead-dark">
 			    <tr>
@@ -122,7 +99,8 @@
 						      
 							        <!-- Modal Header -->
 							        <div class="modal-header">
-							          <h4 class="modal-title">Are you sure?</h4>
+							          <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        				<h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
 							          <button type="button" class="close" data-dismiss="modal">&times;</button>
 							        </div>
 							        
@@ -133,7 +111,7 @@
 							        
 							        <!-- Modal footer -->
 							        <div class="modal-footer" style="text-align: center;">
-							        	<button type="button" class="btn btn-danger" data-dismiss="modal">Yes, delete it!</button>
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();">Yes, delete it!</button>
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
 							        </div>
 						        
@@ -187,7 +165,8 @@
 						      
 							        <!-- Modal Header -->
 							        <div class="modal-header">
-							          <h4 class="modal-title">Are you sure?</h4>
+							           <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        				<h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
 							          <button type="button" class="close" data-dismiss="modal">&times;</button>
 							        </div>
 							        
@@ -198,7 +177,7 @@
 							        
 							        <!-- Modal footer -->
 							        <div class="modal-footer" style="text-align: center;">
-							        	<button type="button" class="btn btn-danger" data-dismiss="modal">Yes, delete it!</button>
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();">Yes, delete it!</button>
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
 							        </div>
 						        
@@ -252,7 +231,8 @@
 						      
 							        <!-- Modal Header -->
 							        <div class="modal-header">
-							          <h4 class="modal-title">Are you sure?</h4>
+							          <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        				<h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
 							          <button type="button" class="close" data-dismiss="modal">&times;</button>
 							        </div>
 							        
@@ -263,7 +243,7 @@
 							        
 							        <!-- Modal footer -->
 							        <div class="modal-footer" style="text-align: center;">
-							        	<button type="button" class="btn btn-danger" data-dismiss="modal">Yes, delete it!</button>
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();">Yes, delete it!</button>
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
 							        </div>
 						        
@@ -275,12 +255,7 @@
 		    </tbody>
   		</table>
   		</div>
-	</div>
-	</section>
-
-	<div class="clearfix"></div>
-
-	<div class="container mb-100"><ul class="pagination justify-content-center">
+  		<div><ul class="pagination justify-content-center">
 	  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
 	  <li class="page-item active"><a class="page-link" href="#">1</a></li>
 	  <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -288,10 +263,17 @@
 	  <li class="page-item"><a class="page-link" href="#">Next</a></li>
 	</ul>
 	</div>
+	</div>
+	</section>
+
+	<div class="clearfix"></div>
+
+	
 	
 	<div id="footer"></div>
 
 	<script type="text/javascript" src="../js/include.js"></script>
+	<script type="text/javascript" src="../js/confirm.js"></script>
 
 </body>
 </html>

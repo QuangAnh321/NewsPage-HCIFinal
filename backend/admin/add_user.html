@@ -21,7 +21,10 @@
 	<div id="header"></div>
 
 	<section id="title">
-		<div class="container font-35 mt-30 mb-85 text-center">Add new user</div>
+		<div class="container font-35 mt-30 mb-50 text-center">
+			<a href="manage_user.html"><button class="button font-18 float-left white-text"><span>Back</span></button></a>
+		Add new user
+	</div>
 	</section>
 
 	<section id="form" class="text-center mb-50">
@@ -31,21 +34,21 @@
 					<div id="confirm" style="margin-left: 381px; width: 500px;"></div>
 					<div id="Email"></div>
 			  		<label for="email">Email:</label>
-			  		<input type="text" id="email" name="email" placeholder="Email">
+			  		<input type="text" id="email" name="email" placeholder="Email" required="required">
 			  	</div>
 			  	<div class="mt-15"> 
 			  		<div id="Password"></div>
 			  		<label for="password">Password:</label>
-			  		<input type="text" id="password" name="password" placeholder="Password">
+			  		<input type="text" id="password" name="password" placeholder="Password" required="required">
 			  	</div>
 			  	<div class="mt-15"> 
 			  		<div id="cfPass"></div>
 			  		<label for="cfpass">Confirm password:</label>
-			  		<input type="text" id="cfpass" name="cfpass" placeholder="Password">
+			  		<input type="text" id="cfpass" name="cfpass" placeholder="Password" required="required">
 			  	</div>
 			  	<div class="mt-25 font-18"> 
-			  		<input type="button" value="Add" class="button1" onclick="validateEmail(); validatePassword(); validateCfPass()">
-			  		<input type="button" value="Cancel" class="button2">
+			  		<input type="button" value="Add" class="button1" onclick="addUser();">
+			  		<input type="button" value="Cancel" class="button2" onclick="cancel();">
 			  </div>
 			</form>
 		</div>
