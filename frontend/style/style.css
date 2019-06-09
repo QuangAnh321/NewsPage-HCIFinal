@@ -2,6 +2,7 @@
 
 #header {
     text-align: center;
+
 }
 #header img {
     width: 50px;
@@ -20,7 +21,6 @@
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 100px;
     color: gray;
     opacity: 0.5;
     transition: 0.3s;
@@ -43,11 +43,19 @@ body {
 footer {
     margin-top:auto; 
 }
-/*Content*/
-.content {
-    margin-bottom: 30px;
+
+.mt100 {
+    margin-bottom: 100px;
 }
 
+.mt10 {
+    margin-bottom: 10px;
+}
+
+.mt30 {
+    margin-bottom: 30px;
+}
+/*Content*/
 .articleContent {
     display: inline-block;
 }
@@ -80,8 +88,30 @@ img.image {
     text-decoration: none;
 }
 
+.latest img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.latest h4 {
+    display: inline-block;
+}
+
 .year a {
     text-decoration: none;
+}
+
+.year img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.year h4 {
+    display: inline-block;
 }
 
 /*Login*/
@@ -159,3 +189,8 @@ img.image {
     display: inline-block;
 }
 
+/*Middle*/
+
+.contentBody {
+    text-align: justify;
+}
