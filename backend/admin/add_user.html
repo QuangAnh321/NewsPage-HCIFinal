@@ -21,27 +21,30 @@
 	<div id="header"></div>
 
 	<section id="title">
-		<div class="container font-35 mt-30 mb-100 text-center">Add new user</div>
+		<div class="container font-35 mt-30 mb-85 text-center">Add new user</div>
 	</section>
 
 	<section id="form" class="text-center mb-100">
 		<div class="container form">
-			<form>
-				<div>
+			<form name="add-user" onsubmit="return (validateEmail() & validatePassword() & validateCfPass());">
+				<div class="mt-15">
+					<div id="Email"></div>
 			  		<label for="email">Email:</label>
-			  		<input type="text" id="email" name="email" placeholder="Email">
+			  		<input type="text" id="email" name="email" placeholder="Email" onblur="validateEmail()">
 			  	</div>
-			  	<div> 
+			  	<div class="mt-15"> 
+			  		<div id="Password"></div>
 			  		<label for="password">Password:</label>
-			  		<input type="text" id="password" name="password" placeholder="Password">
+			  		<input type="text" id="password" name="password" placeholder="Password" onblur="validatePassword()">
 			  	</div>
-			  	<div> 
+			  	<div class="mt-15"> 
+			  		<div id="cfPass"></div>
 			  		<label for="cfpass">Confirm password:</label>
-			  		<input type="text" id="cfpass" name="cfpass" placeholder="Password">
+			  		<input type="text" id="cfpass" name="cfpass" placeholder="Password" onblur="validateCfPass()">
 			  	</div>
 			  	<div class="mt-25 font-18"> 
-			  		<button class="button1">Add</button>
-			  		<button class="button2">Cancel</button>
+			  		<input type="button" value="Add" class="button1" onclick="validateEmail(); validatePassword(); validateCfPass()">
+			  		<input type="button" value="Cancel" class="button2">
 			  </div>
 			</form>
 		</div>
@@ -52,8 +55,6 @@
 	<script type="text/javascript" src="../js/include.js"></script>
 	<script type="text/javascript" src="../js/confirm.js"></script>
 	<script type="text/javascript" src="../js/validate.js"></script>
-	<script >
-		checkEmail();
-	</script>
+
 </body>
 </html>

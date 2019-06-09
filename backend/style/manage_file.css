@@ -1,17 +1,92 @@
 .left ul li {
 	list-style-type: none;
+	padding-top: 10px;
 }
 
 .left {
-	border: solid;
+	border: solid 1px;
 	width: 150px;
 	height: 250px;
+	padding: 10px 15px;
 }
 
 .right {
 	margin-left: 200px;
 	padding: 10px 20px;
 }
+
+.left .btn {
+	font-size: 30px;
+	margin-left: -40px;
+	border: solid 1px;
+	box-shadow: 1px 1px 2px 2px  #000; 
+}
+
  .right table td {
  	cursor: pointer;
+}
+
+.colap {
+	width: 120px;
+	margin-left: -40px;
+	padding-left: 40px;
+}
+
+.left .btn1 {
+	outline: none;
+	border: none;
+	background-color: #fff;
+	width: 120px;
+	margin-left: -50px;
+}
+
+.pl-25 {
+	padding-left: 25px;
+}
+
+.fa-trash-alt {
+	margin-left: -40px;
+}
+
+.fa-edit {
+	margin-left: -30px;
+}
+
+.fa-file-upload {
+	margin-left: -40px;
+}
+
+.folder {
+	margin-left: -30px;
+}
+
+.ml-12 {
+	margin-left: 12px;
+}
+
+.file:hover {
+	color: #fff;
+  background-color: #4CAF50;
+}
+
+.file:active {
+	background-color: #3e8e41;
+}
+
+.delete:hover {
+	background-color:#FF0000;
+	color: white;
+}
+
+.edit:hover {
+	background-color: #2b78e4;
+	color: white;
+}
+
+.delete:active {
+	background-color: #a50404;
+}
+
+.edit:active{
+	background-color: #3d528e;
 }
