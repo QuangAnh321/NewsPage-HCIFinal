@@ -6,6 +6,10 @@ function validateEmail() {
     return false;
   }else{
   	document.getElementById("Email").innerHTML = "";
+    document.getElementById("confirm").innerHTML = "Success";
+    document.getElementById("confirm").style.backgroundColor = "#d3f794"
+    document.getElementById("confirm").style.color = "#4CAF50"
+    document.getElementById("confirm").style.border = "1px solid #4CAF50"
   	return true;
   }
 
@@ -19,6 +23,10 @@ function validatePassword() {
   	return false;
 	}else{
 		document.getElementById("Password").innerHTML = "";
+    document.getElementById("confirm").innerHTML = "Success";
+      document.getElementById("confirm").style.backgroundColor = "#d3f794"
+      document.getElementById("confirm").style.color = "#4CAF50"
+      document.getElementById("confirm").style.border = "1px solid #4CAF50"
 		return true;
 	}	
 }
@@ -32,6 +40,10 @@ function validateCfPass() {
   	return false;
   }else{
   	document.getElementById("cfPass").innerHTML = "";
+    document.getElementById("confirm").innerHTML = "Success";
+      document.getElementById("confirm").style.backgroundColor = "#d3f794"
+      document.getElementById("confirm").style.color = "#4CAF50"
+      document.getElementById("confirm").style.border = "1px solid #4CAF50"
   	return true;
 	}
 }

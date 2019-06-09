@@ -51,16 +51,23 @@ input[type=text] {
   text-align:left;
   font-weight:bold;
   margin-left: 381px; 
+  height: 5px;
+  margin-bottom: 10px;
 }
 
 #Password {
   text-align:left;
   font-weight:bold;
   margin-left: 381px; 
+  height: 5px;
+  margin-bottom: 10px;
 }
 
 #cfPass {
   text-align:left;
   font-weight:bold;
   margin-left: 381px; 
+  height: 5px;
+  margin-bottom: 10px;
 }
+
