@@ -18,7 +18,7 @@
 </head>
 <body>
 	
-  <div id="header1"></div>
+  <div id="header"></div>
 
 	<div class="container">
     <div class="title font-35 mt-30 mb-50 text-center">
@@ -28,15 +28,25 @@
   </div>
   <div class="container mb-100">  
 
+    <div class="float-left font-18" style="margin-top: 80px;border-right: solid 1px;width: 250px;
+  height: 230px;">
+  <ul style="list-style-type: none;">
+    <li><a href="add_post.html"><button class="button1">Add new post</button></a></li>
+  </ul>
+  </div>
+
+<div class="right">
+
   <div id="confirm"></div>
 
-  <table class="table table-sm font-18">
+  <table class="table table-sm font-16">
     <thead class="thead-dark">
       <tr>
         <th>ID</th>
         <th>Title</th>
         <th>Category</th>
         <th>Status</th>
+        <th>Create At</th>
         <th>Feature Image</th>
         <th>Action</th>
       </tr>
@@ -44,79 +54,207 @@
     <tbody>
       <tr>
         <td>1</td>
-        <td>QuangAnh@gmail.com</td>
-        <td>12837ahfbjavcj</td>
-        <td>Admin</td>
-        <td>30/4/1975</td>
+        <td>OnePlus 7 pro review</td>
+        <td>Smartphone</td>
+        <td>Published</td>
+        <td>20/04/2019</td>
+        <td>oneplus7pro.jpg</td>
         <td>
           <a href="edit_post.html" class="fas fa-edit text-center edit-hover edit-active"></a>
-          <a href="#" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></a>
+          <button class="button fas fa-trash-alt disable cursor" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation" style="color: #D3D3D3;cursor: context-menu;"></button>
+
+          <!-- The Modal -->
+            <div class="modal fade" id="myModal1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                  
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        <h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        You will not able to recover this Category!
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();" >Yes, delete it!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
+                      </div>
+                    
+                    </div>
+                </div>
+            </div>
         </td>
       </tr>
        <tr>
-        <td>1</td>
-        <td>QuangAnh@gmail.com</td>
-        <td>12837ahfbjavcj</td>
-        <td>Admin</td>
-        <td>30/4/1975</td>
+        <td>2</td>
+        <td>This is how much Apple’s ...</td>
+        <td>PC/Laptop</td>
+        <td>Published</td>
+        <td>21/06/2019</td>
+        <td>macpro.jpg</td>
         <td> 
           <a href="edit_post.html" class="fas fa-edit text-center edit-hover edit-active"></a>
-          <a href="#" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></a>
+         <button class="button" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></button>
+
+          <!-- The Modal -->
+            <div class="modal fade" id="myModal1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                  
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        <h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        You will not able to recover this Category!
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();" >Yes, delete it!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
+                      </div>
+                    
+                    </div>
+                </div>
+            </div>
         </td>
       </tr>
        <tr>
-        <td>1</td>
-        <td>QuangAnh@gmail.com</td>
-        <td>12837ahfbjavcj</td>
-        <td>Admin</td>
-        <td>30/4/1975</td>
+        <td>3</td>
+        <td>Most important MacOS...</td>
+        <td>Software</td>
+        <td>Published</td>
+        <td>30/09/2019</td>
+        <td>macoscatalina.jpg</td>
         <td>
           <a href="edit_post.html" class="fas fa-edit text-center edit-hover edit-active"></a>
-          <a href="#" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></a>
+          <button class="button" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></button>
+
+          <!-- The Modal -->
+            <div class="modal fade" id="myModal1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                  
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        <h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        You will not able to recover this Category!
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();" >Yes, delete it!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
+                      </div>
+                    
+                    </div>
+                </div>
+            </div>
         </td>
       </tr>
        <tr>
-        <td>1</td>
-        <td>QuangAnh@gmail.com</td>
-        <td>12837ahfbjavcj</td>
-        <td>Admin</td>
-        <td>30/4/1975</td>
+        <td>4</td>
+        <td>If you lose your iPhone,...</td>
+        <td>How-to</td>
+        <td>Published</td>
+        <td>30/09/2019</td>
+        <td>iphone.jpg</td>
         <td> 
           <a href="edit_post.html" class="fas fa-edit text-center edit-hover edit-active"></a>
-          <a href="#" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></a>
+         <button class="button" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></button>
+
+          <!-- The Modal -->
+            <div class="modal fade" id="myModal1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                  
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        <h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        You will not able to recover this Category!
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();" >Yes, delete it!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
+                      </div>
+                    
+                    </div>
+                </div>
+            </div>
         </td>
       </tr>
        <tr>
-        <td>1</td>
-        <td>QuangAnh@gmail.com</td>
-        <td>12837ahfbjavcj</td>
-        <td>Admin</td>
-        <td>30/4/1975</td>
+        <td>5</td>
+        <td>Now is the best time to...</td>
+        <td>Smartphone</td>
+        <td>Published</td>
+        <td>30/10/2019</td>
+        <td>note9.jpg</td>
         <td>
           <a href="edit_post.html" class="fas fa-edit text-center edit-hover edit-active"></a>
-          <a href="#" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></a>
+          <button class="button" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></button>
+
+          <!-- The Modal -->
+            <div class="modal fade" id="myModal1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                  
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        <h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        You will not able to recover this Category!
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();" >Yes, delete it!</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No, cancel it!</button>
+                      </div>
+                    
+                    </div>
+                </div>
+            </div>
         </td>
       </tr>
+  
     </tbody>
   </table>
-  <div class="float-right mt-15 font-18">
-    <a href="add_post.html"><button class="button1" disabled="disable" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation" style="background-color: #808080; ">Add new post</button></a>
-  </div>
-
   <div class="clearfix"></div>
 
 </div>
-
-<div class="container mb-100"><ul class="pagination justify-content-center">
-  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-  <li class="page-item"><a class="page-link" href="#">2</a></li>
-  <li class="page-item"><a class="page-link" href="#">3</a></li>
-  <li class="page-item"><a class="page-link" href="#">Next</a></li>
-</ul>
-</div>
-	
-  <div id="footer1"></div>
+	</div>
+  <div id="footer"></div>
 
   <script type="text/javascript" src="../js/include.js"></script>
   <script type="text/javascript" src="../js/confirm.js"></script>

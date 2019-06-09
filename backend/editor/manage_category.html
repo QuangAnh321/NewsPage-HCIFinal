@@ -19,10 +19,10 @@
 </head>
 <body>
 	
-	<div id="header1"></div>
+	<div id="header"></div>
 
 	<div class="container">
-		<div class="title font-35 mt-30 mb-100 text-center">
+		<div class="title mt-30 font-35 mb-50 text-center" >
 			<i class="far fa-folder" ></i>
 			 Category Management
 		</div>
@@ -30,44 +30,24 @@
 
 	<section id="left">
 	<div class="container">
-		<div class="left float-left mb-100 text-center font-18">
-	  	<h2 class="font-35">Add new category:</h2>
-	  	<input type="text">
-	  	<button  class="button1 mt-15" data-toggle="modal" data-target="#submit">
+		<div class="left float-left mb-100 text-center font-18" style="margin-top: 80px;">
+
+	  	<h2 class="font-25">Add new category:</h2>
+	  	<form name="cat">
+	  		<div id="Category"></div>
+	  	<input type="text" style="margin-top: 40px;" name="category">
+	  	<button  type="button" class="button1 mt-15" onclick="addCat();">
 			Add
 		</button>
-
-		<!-- The Modal -->
-		<div class="modal fade" id="submit">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-				      
-				    <!-- Modal Header -->
-				    <div class="modal-header">
-				        <h4 class="modal-title">Success!</h4>
-				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				    </div>
-				        
-				    <!-- Modal body -->
-				    <div class="modal-body">
-				        <b>New category added!</b>
-				    </div>
-				        
-				    <!-- Modal footer -->
-				    <div class="modal-footer" style="text-align: center;">
-				        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-				    </div>
-				        
-				</div>
-			</div>
-		</div>
+	</form>
 		</div>
 	</div>
 	</section>
 
 	<section id="right">
 	<div class="container">
-		<div class="mb-100 right">         
+		<div class="right" style="margin-bottom: 50px;"> 
+		<div id="confirm"></div>        
   		<table class="table table-sm font-18">
 		    <thead class="thead-dark">
 			    <tr>
@@ -81,9 +61,9 @@
 		    <tbody>
 		    	<tr>
 			        <td>1</td>
-			        <td>Personal Life</td>
+			        <td>Smartphone</td>
 			        <td>30/4/2017</td>
-			        <td>09/01/2018</td>
+			        <td></td>
 			        <td>
 						<button class="button fas fa-edit edit-hover edit-active" data-toggle="modal" data-target="#myModal">
 						</button>
@@ -106,19 +86,46 @@
 							        
 							        <!-- Modal footer -->
 							        <div class="modal-footer" style="text-align: center;">
-										<button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
+										<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cf();">Confirm</button>
 							          	<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 							        </div>
 						      	</div>
 						    </div>
 						</div>
 			        	
-			        	<button class="button" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></button>
+			        	<button class="button fas fa-trash-alt disable cursor" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation" style="color: #D3D3D3;cursor: context-menu;"></button>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModal1">
+						    <div class="modal-dialog modal-dialog-centered">
+						    	<div class="modal-content">
+						      
+							        <!-- Modal Header -->
+							        <div class="modal-header">
+							          <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        				<h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        </div>
+							        
+							        <!-- Modal body -->
+							        <div class="modal-body">
+							          You will not able to recover this Category!
+							        </div>
+							        
+							        <!-- Modal footer -->
+							        <div class="modal-footer" style="text-align: center;">
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();">Yes, delete it!</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cancel();">No, cancel it!</button>
+							        </div>
+						        
+						      	</div>
+						    </div>
+						</div>
 		        	</td>
 		    	</tr>
 		       	<tr>
 			        <td>2</td>
-			        <td>Technical</td>
+			        <td>PC/Laptop</td>
 			        <td>30/4/2017</td>
 			        <td></td>
 			        <td>
@@ -143,7 +150,7 @@
 							        
 							        <!-- Modal footer -->
 							        <div class="modal-footer" style="text-align: center;">
-										<button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
+										<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cf();">Confirm</button>
 							          	<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 							        </div>
 						        
@@ -151,12 +158,39 @@
 						    </div>
 						</div>
 			        	
-			        	<button class="button" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></button>
+			        	<button class="button fas fa-trash-alt disable cursor" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation" style="color: #D3D3D3;cursor: context-menu;"></button>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModall1">
+						    <div class="modal-dialog modal-dialog-centered">
+						    	<div class="modal-content">
+						      
+							        <!-- Modal Header -->
+							        <div class="modal-header">
+							           <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        				<h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        </div>
+							        
+							        <!-- Modal body -->
+							        <div class="modal-body">
+							          You will not able to recover this Category!
+							        </div>
+							        
+							        <!-- Modal footer -->
+							        <div class="modal-footer" style="text-align: center;">
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();">Yes, delete it!</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cancel();">No, cancel it!</button>
+							        </div>
+						        
+						      	</div>
+						    </div>
+						</div>
 		        	</td>
 		      	</tr>
 		      	<tr>
 			        <td>3</td>
-			        <td>Career Guide</td>
+			        <td>Software</td>
 			        <td>30/4/2017</td>
 			        <td></td>
 			        <td>
@@ -181,7 +215,71 @@
 							        
 							        <!-- Modal footer -->
 							        <div class="modal-footer" style="text-align: center;">
-										<button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
+										<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cf();">Confirm</button>
+							          	<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							        </div>
+						        
+						      	</div>
+						    </div>
+						</div>
+			        	<button class="button fas fa-trash-alt disable cursor" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation" style="color: #D3D3D3;cursor: context-menu;"></button>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModalll1">
+						    <div class="modal-dialog modal-dialog-centered">
+						    	<div class="modal-content">
+						      
+							        <!-- Modal Header -->
+							        <div class="modal-header">
+							          <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        				<h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        </div>
+							        
+							        <!-- Modal body -->
+							        <div class="modal-body">
+							          You will not able to recover this Category!
+							        </div>
+							        
+							        <!-- Modal footer -->
+							        <div class="modal-footer" style="text-align: center;">
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();">Yes, delete it!</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cancel();">No, cancel it!</button>
+							        </div>
+						        
+						      	</div>
+						    </div>
+						</div>
+		        	</td>
+		      	</tr>
+		      	<tr>
+			        <td>4</td>
+			        <td>How-to</td>
+			        <td>30/4/2017</td>
+			        <td></td>
+			        <td>
+			          	<button class="button fas fa-edit edit-hover edit-active" data-toggle="modal" data-target="#myModalll">
+						</button>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModalll">
+						    <div class="modal-dialog modal-dialog-centered">
+						    	<div class="modal-content">
+						      
+							        <!-- Modal Header -->
+							        <div class="modal-header">
+							          <h4 class="modal-title">Edit Category</h4>
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        </div>
+							        
+							        <!-- Modal body -->
+							        <div class="modal-body">
+							          <input type="text" name="catname" placeholder="Career Guide">
+							        </div>
+							        
+							        <!-- Modal footer -->
+							        <div class="modal-footer" style="text-align: center;">
+										<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cf();">Confirm</button>
 							          	<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 							        </div>
 						        
@@ -189,30 +287,51 @@
 						    </div>
 						</div>
 			        	
-			        	<button class="button" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation"><i class="fas fa-trash-alt disable cursor"></i></button>
+			        	<button class="button fas fa-trash-alt disable cursor" data-toggle="tooltip" data-placement="bottom" title="You don't have permission to perform this operation" style="color: #D3D3D3;cursor: context-menu;"></button>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModalll1">
+						    <div class="modal-dialog modal-dialog-centered">
+						    	<div class="modal-content">
+						      
+							        <!-- Modal Header -->
+							        <div class="modal-header">
+							          <img src="../images/warning_alert_attention_search-512.png" height="50" width="50">
+                        				<h4 class="modal-title" style="margin-left: 30px;font-size: 30px;">Warning!</h4>
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        </div>
+							        
+							        <!-- Modal body -->
+							        <div class="modal-body">
+							          You will not able to recover this Category!
+							        </div>
+							        
+							        <!-- Modal footer -->
+							        <div class="modal-footer" style="text-align: center;">
+							        	<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="confirmDelete();">Yes, delete it!</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cancel();">No, cancel it!</button>
+							        </div>
+						        
+						      	</div>
+						    </div>
+						</div>
 		        	</td>
 		      	</tr>
 		    </tbody>
   		</table>
   		</div>
+  		
 	</div>
 	</section>
 
 	<div class="clearfix"></div>
 
-	<div class="container mb-100"><ul class="pagination justify-content-center">
-	  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-	  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-	  <li class="page-item"><a class="page-link" href="#">2</a></li>
-	  <li class="page-item"><a class="page-link" href="#">3</a></li>
-	  <li class="page-item"><a class="page-link" href="#">Next</a></li>
-	</ul>
-	</div>
 	
-	<div id="footer1"></div>
+	
+	<div id="footer"></div>
 
 	<script type="text/javascript" src="../js/include.js"></script>
-
+	<script type="text/javascript" src="../js/validate.js"></script>
+	<script type="text/javascript" src="../js/confirm.js"></script>
 </body>
 </html>
-

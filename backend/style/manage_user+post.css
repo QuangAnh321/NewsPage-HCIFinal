@@ -47,3 +47,11 @@ table a {
   margin-left: 300px;
   padding: 10px 20px;
 }
+
+table .button {
+  width: 40px;
+  padding: 4px 6px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+}
