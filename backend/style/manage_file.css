@@ -56,6 +56,38 @@
 	margin-left: -40px;
 }
 
-.fa-folder {
+.folder {
 	margin-left: -30px;
 }
+
+.ml-12 {
+	margin-left: 12px;
+}
+
+.file:hover {
+	color: #fff;
+  background-color: #4CAF50;
+}
+
+.file:active {
+	background-color: #3e8e41;
+}
+
+.delete:hover {
+	background-color:#FF0000;
+	color: white;
+}
+
+.edit:hover {
+	background-color: #2b78e4;
+	color: white;
+}
+
+.delete:active {
+	background-color: #a50404;
+}
+
+.edit:active{
+	background-color: #3d528e;
+}
+
