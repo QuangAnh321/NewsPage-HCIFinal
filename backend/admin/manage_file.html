@@ -33,29 +33,48 @@
 			<div class="left float-left mb-100">
 				<ul>
 					<li class="font-18">
-						<button class="navbar-toggler toggler-example btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"><i class="ml-10">New</i></i></span></button>
+						<button class="navbar-toggler toggler-example butn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"><i class="ml-10">New</i></i></span></button>
 
 					  <!-- Collapsible content -->
 					  <div class="collapse navbar-collapse colap" id="navbarSupportedContent1">
 					    <ul class="navbar-nav mr-auto ml-10">
 					      <li class="nav-item">
-
-					      	<button class="btn1 pl-25 file"><span><i class="fas fa-folder folder"><i class="ml-10">Folder</i></i></span></button>
+					      	<button class="btn1 pl-25 file" data-toggle="modal" data-target="#myModal"><span><i class="fas fa-folder folder"><i class="ml-10">Folder</i></i></span></button>
+					      	<div class="modal fade" id="myModal">
+						 	<div class="modal-dialog modal-dialog-centered">
+						    	<div class="modal-content">
+						      
+							        <!-- Modal Header -->
+							        <div class="modal-header">
+							          <h4 class="modal-title">Create New Folder</h4>
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        </div>
+							        
+							        <!-- Modal body -->
+							        <div class="modal-body">
+							          <input type="text" name="folname" placeholder="Folder Name...">
+							        </div>
+							        
+							        <!-- Modal footer -->
+							        <div class="modal-footer" style="text-align: center;">
+										<button type="button" class="btn btn-success" data-dismiss="modal">Confirm</button>
+							          	<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							        </div>
+						      	</div>
+						    </div>
+						</div>
 					      </li>
 					      <li class="nav-item">
 					        <button class="btn1 file"><span><i class="fas fa-file-upload"><i class="ml-12">File</i></i></span></button>
-
 					      </li>
 					    </ul>
 					  </div>
 					</li>
 					<li class="font-18 ml-10">
-
 						<button class="btn1 edit"><span><i class="fas fa-edit"><i class="ml-10">Edit</i></i></span></button>
 					</li>
 					<li class="font-18 ml-10">
 						<button class="btn1 pl-25 delete"><span><i class="fas fa-trash-alt"><i class="ml-10">Delete</i></i></span></button>
-
 					</li>
 				</ul>
 			</div>
