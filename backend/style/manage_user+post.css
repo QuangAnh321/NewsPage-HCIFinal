@@ -6,7 +6,7 @@ table a {
 
 .button1 {
   text-align: center;
-  
+  width: 200px;
   outline: none;
   color: #fff;
   background-color: #4CAF50;
@@ -28,6 +28,7 @@ table a {
   cursor: pointer;
   outline: none;
   color: #fff;
+  width: 200px;
   background-color: #2b78e4;
   border: none;
   border-radius: 4px;
@@ -40,4 +41,9 @@ table a {
   background-color: #3d528e;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.right {
+  margin-left: 300px;
+  padding: 10px 20px;
 }

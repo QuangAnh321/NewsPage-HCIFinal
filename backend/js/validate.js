@@ -49,15 +49,80 @@ function cancel(){
 }
      
 
-function addFile() {
-  document.getElementById("confirm").innerHTML = "Success";
-  document.getElementById("confirm").style.backgroundColor = "#d3f794"
- document.getElementById("confirm").style.color = "#4CAF50"
-  document.getElementById("confirm").style.border = "1px solid #4CAF50"
-}
+
 
 function deleteFile(){
   document.getElementById("check").style.display = "";
 
+}
+
+function addCat() {
+  var cat = document.forms["cat"]["category"].value;
+  if(cat == ""){
+  document.getElementById("Category").style.color = "#FF0000"
+  document.getElementById("Category").innerHTML = "Invalid name!";
+  document.getElementById("confirm").innerHTML = "";
+      document.getElementById("confirm").style.backgroundColor = ""
+      document.getElementById("confirm").style.color = ""
+      document.getElementById("confirm").style.border = ""
+  return false;
+  }
+  document.getElementById("confirm").innerHTML = "Success";
+      document.getElementById("confirm").style.backgroundColor = "#d3f794"
+      document.getElementById("confirm").style.color = "#4CAF50"
+      document.getElementById("confirm").style.border = "1px solid #4CAF50"
+      document.getElementById("Category").style.color = "#"
+  document.getElementById("Category").innerHTML = "";
+      return true;
+}
+
+
+
+function addFolder() {
+  var folder = document.forms["folder"]["folname"].value;
+  if(folder == ""){
+  document.getElementById("message").style.color = "#FF0000"
+  document.getElementById("message").innerHTML = "Invalid name!";
+  document.getElementById("confirm").innerHTML = "";
+      document.getElementById("confirm").style.backgroundColor = ""
+      document.getElementById("confirm").style.color = ""
+      document.getElementById("confirm").style.border = ""
+  return false;
+  }
+  document.getElementById("confirm").innerHTML = "Success";
+      document.getElementById("confirm").style.backgroundColor = "#d3f794"
+      document.getElementById("confirm").style.color = "#4CAF50"
+      document.getElementById("confirm").style.border = "1px solid #4CAF50"
+      document.getElementById("message").style.color = ""
+  document.getElementById("message").innerHTML = "";
+      return true;
+}
+
+function addFile() {
+  var file = document.forms["file"]["fileToUpload"].value;
+  if(file == ""){
+  document.getElementById("message1").style.color = "#FF0000"
+  document.getElementById("message1").innerHTML = "Please Choose A File!";
+  document.getElementById("confirm").innerHTML = "";
+      document.getElementById("confirm").style.backgroundColor = ""
+      document.getElementById("confirm").style.color = ""
+      document.getElementById("confirm").style.border = ""
+  return false;
+  }
+  document.getElementById("confirm").innerHTML = "Success";
+      document.getElementById("confirm").style.backgroundColor = "#d3f794"
+      document.getElementById("confirm").style.color = "#4CAF50"
+      document.getElementById("confirm").style.border = "1px solid #4CAF50"
+      document.getElementById("message1").style.color = ""
+  document.getElementById("message1").innerHTML = "";
+      return true;
+}
+
+function close(){
+   
+   document.getElementById("message").style.color = ""
+  document.getElementById("message").innerHTML = "";
+  document.getElementById("message1").style.color = ""
+  document.getElementById("message1").innerHTML = "";
 }
 
