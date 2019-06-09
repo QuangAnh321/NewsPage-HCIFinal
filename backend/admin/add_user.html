@@ -24,27 +24,28 @@
 		<div class="container font-35 mt-30 mb-85 text-center">Add new user</div>
 	</section>
 
-	<section id="form" class="text-center mb-100">
+	<section id="form" class="text-center mb-50">
 		<div class="container form">
-			<form name="add-user" onsubmit="return (validateEmail() & validatePassword() & validateCfPass());">
+			<form name="add-user">
 				<div class="mt-15">
+					<div id="confirm" style="margin-left: 381px; width: 500px;"></div>
 					<div id="Email"></div>
 			  		<label for="email">Email:</label>
-			  		<input type="text" id="email" name="email" placeholder="Email" onblur="validateEmail()">
+			  		<input type="text" id="email" name="email" placeholder="Email">
 			  	</div>
 			  	<div class="mt-15"> 
 			  		<div id="Password"></div>
 			  		<label for="password">Password:</label>
-			  		<input type="text" id="password" name="password" placeholder="Password" onblur="validatePassword()">
+			  		<input type="text" id="password" name="password" placeholder="Password">
 			  	</div>
 			  	<div class="mt-15"> 
 			  		<div id="cfPass"></div>
 			  		<label for="cfpass">Confirm password:</label>
-			  		<input type="text" id="cfpass" name="cfpass" placeholder="Password" onblur="validateCfPass()">
+			  		<input type="text" id="cfpass" name="cfpass" placeholder="Password">
 			  	</div>
 			  	<div class="mt-25 font-18"> 
-			  		<input type="submit" value="Add" class="button1">
-			  		<input type="submit" value="Cancel" class="button2">
+			  		<input type="button" value="Add" class="button1" onclick="validateEmail(); validatePassword(); validateCfPass()">
+			  		<input type="button" value="Cancel" class="button2">
 			  </div>
 			</form>
 		</div>
