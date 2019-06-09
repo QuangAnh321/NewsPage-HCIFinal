@@ -15,11 +15,15 @@
 
 
 	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" type="text/css" href="../style/role.css">
 </head>
 <body>
+
 	<div id="header"></div>
+
 	<div class="container">
     <div class="title font-35 mt-30 mb-50 text-center">
+    	<a href="manage_role.html"><button class="button font-18 float-left white-text"><span>Back</span></button></a>
       <i class="far fa-newspaper" ></i>
       Edit Role
     </div>
@@ -155,7 +159,7 @@
 	 
 		
 		<div class="float-right mt-15 font-18">
-		    <button  class="button1 btn btn-success" data-toggle="modal" data-target="#saved">
+		    <button  class="button1" data-toggle="modal" data-target="#saved">
       Save
     </button>
 
@@ -166,7 +170,8 @@
               
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Success!</h4>
+                <img src="../images/tick.png" height="50" width="50">
+                        <h4 class="modal-title" style="margin-left: 30px;font-size: 30px;color: green;">Success!</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
                 
@@ -183,7 +188,7 @@
         </div>
       </div>
     </div>
-     <button  class="button1 btn btn-secondary" data-toggle="modal" data-target="#Cancel">
+     <button  class="button2" data-toggle="modal" data-target="#Cancel">
       Cancel
     </button>
 

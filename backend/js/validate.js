@@ -3,7 +3,7 @@ function addUser() {
   var password = document.forms["add-user"]["password"].value;
   var email = document.forms["add-user"]["email"].value;
   if(!email==""||!password==""||!cf==""){
-     document.getElementById("confirm").innerHTML = "Success";
+     document.getElementById("confirm").innerHTML = "A User Has Been Created!";
       document.getElementById("confirm").style.backgroundColor = "#d3f794"
       document.getElementById("confirm").style.color = "#4CAF50"
       document.getElementById("confirm").style.border = "1px solid #4CAF50"
@@ -43,18 +43,15 @@ function cancel(){
   document.getElementById("Password").innerHTML = "";
   document.getElementById("cfPass").style.color = ""
   document.getElementById("cfPass").innerHTML = "";
-  cf = "";
-  password ="";
-  email = "";
+  cf.reset();
+  password.reset();
+  email.reset();
 }
      
 
 
 
-function deleteFile(){
-  document.getElementById("check").style.display = "";
 
-}
 
 function addCat() {
   var cat = document.forms["cat"]["category"].value;
@@ -67,7 +64,7 @@ function addCat() {
       document.getElementById("confirm").style.border = ""
   return false;
   }
-  document.getElementById("confirm").innerHTML = "Success";
+  document.getElementById("confirm").innerHTML = "A Category Has Been Created!";
       document.getElementById("confirm").style.backgroundColor = "#d3f794"
       document.getElementById("confirm").style.color = "#4CAF50"
       document.getElementById("confirm").style.border = "1px solid #4CAF50"
@@ -89,7 +86,7 @@ function addFolder() {
       document.getElementById("confirm").style.border = ""
   return false;
   }
-  document.getElementById("confirm").innerHTML = "Success";
+  document.getElementById("confirm").innerHTML = "A Folder Has Been Created!";
       document.getElementById("confirm").style.backgroundColor = "#d3f794"
       document.getElementById("confirm").style.color = "#4CAF50"
       document.getElementById("confirm").style.border = "1px solid #4CAF50"
@@ -109,7 +106,7 @@ function addFile() {
       document.getElementById("confirm").style.border = ""
   return false;
   }
-  document.getElementById("confirm").innerHTML = "Success";
+  document.getElementById("confirm").innerHTML = "A File Has Been Added!";
       document.getElementById("confirm").style.backgroundColor = "#d3f794"
       document.getElementById("confirm").style.color = "#4CAF50"
       document.getElementById("confirm").style.border = "1px solid #4CAF50"
@@ -126,3 +123,13 @@ function close(){
   document.getElementById("message1").innerHTML = "";
 }
 
+
+$(function () {
+        $("#Delete").click(function () {
+            if ($(this).is(":click")) {
+                $("#check").show();
+            } else {
+                $("#check").hide();
+            }
+        });
+    });
